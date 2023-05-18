@@ -28,6 +28,3 @@ qa = VectorDBQA.from_chain_type(llm=OpenAI(), chain_type="stuff", vectorstore=do
 # 进行问答
 result = qa({"query": "Curry得到幾分?"})
 print(result)
-
-result = qa({"query": "中國大陸，首季GDP成長幾％?"})
-print(result)

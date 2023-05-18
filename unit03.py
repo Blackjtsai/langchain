@@ -1,5 +1,3 @@
-
-
 import ssl
 import certifi
 import nltk
@@ -10,8 +8,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain import OpenAI
 
 import os
-os.environ["OPENAI_API_KEY"] = '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'
-
+os.environ["OPENAI_API_KEY"] = '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'
 
 # 設置 SSL 憑證路徑
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -23,7 +20,7 @@ nltk.download('averaged_perceptron_tagger',
 
 
 # 导入文本
-loader = UnstructuredFileLoader("/unit03/unit03.txt")
+loader = UnstructuredFileLoader("./unit03/unit03.txt")
 
 # 将文本转成 Document 对象
 document = loader.load()
